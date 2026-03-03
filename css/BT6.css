@@ -1,0 +1,42 @@
+.container {
+ display: flex; /* Dùng Flexbox để dàn trang */
+ flex-wrap: wrap; /* Tự động xuống dòng nếu hết chỗ */
+ gap: 20px; /* Khoảng cách giữa các thẻ */
+ padding: 20px;
+ }
+ .card {
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ width: 200px; /* Độ rộng cố định cho mỗi thẻ */
+ padding: 15px;
+ text-align: center;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ }
+ .card img {
+ width: 100%;
+ height: 150px;
+ object-fit: contain; /* Ảnh co giãn vừa khung */
+ margin-bottom: 10px;
+ }
+ .card h3 {
+ font-size: 16px;
+ margin: 10px 0;
+ height: 40px; /* Cố định chiều cao tên để đều nhau */
+ overflow: hidden;
+ }
+ .price {
+ color: #d35400;
+ font-weight: bold;
+ font-size: 18px;
+ margin-bottom: 10px;
+ }
+ .btn-buy {
+ background-color: #28a745;
+ color: white;
+ border: none;
+ padding: 8px 15px;
+ border-radius: 4px;
+ cursor: pointer;
+ width: 100%;
+ }
+ .btn-buy:hover { background-color: #218838; }
